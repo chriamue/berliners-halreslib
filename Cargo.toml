@@ -32,3 +32,8 @@ features = ["tera"]
 [dependencies.rocket_db_pools]
 version  = "0.2.0"
 features = ["sqlx_sqlite"]
+
+[workspace]
+members = [
+    "yew-frontend"
+]
