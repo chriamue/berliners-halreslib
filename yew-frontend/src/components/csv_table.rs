@@ -13,7 +13,7 @@ pub fn csv_table(props: &CsvTableProps) -> Html {
         html! {
             <tr>
                 <td>{row.catchdate.to_string()}</td>
-                <td>{&row.url_raw}</td>
+                <td><a href={row.url_raw.to_string()}>{&row.url_raw}</a></td>
             </tr>
         }
     });
